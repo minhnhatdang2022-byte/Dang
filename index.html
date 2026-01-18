@@ -1,140 +1,102 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>Phạm Hải Đăng | 12A4</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Phạm Hải Đăng | 12A4</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #ff758c, #ff7eb3);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-    }
-
-    .card {
-      background: white;
-      max-width: 420px;
-      width: 100%;
-      border-radius: 24px;
-      padding: 25px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.25);
-      animation: fadeIn 0.6s ease;
-    }
-
-    @keyframes fadeIn {
-      from {opacity:0; transform: translateY(20px);}
-      to {opacity:1; transform: translateY(0);}
-    }
-
-    h1 {
-      text-align: center;
-      margin: 10px 0 0;
-    }
-
-    .class {
-      text-align: center;
-      color: #ff4f87;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-
-    .avatar {
-      width: 100%;
-      border-radius: 18px;
-      margin: 15px 0;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-    }
-
-    .section {
-      margin-bottom: 18px;
-    }
-
-    .section h3 {
-      color: #ff4f87;
-      margin-bottom: 6px;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 10px;
-      border-radius: 12px;
-      border: 1px solid #ccc;
-      font-size: 14px;
-    }
-
-    button {
-      width: 100%;
-      padding: 14px;
-      border-radius: 14px;
-      border: none;
-      background: linear-gradient(135deg, #ff4f87, #ff2f6d);
-      color: white;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    button:hover {
-      opacity: 0.9;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 12px;
-      color: #888;
-      margin-top: 10px;
-    }
-  </style>
+<style>
+body{
+  margin:0;
+  min-height:100vh;
+  background:linear-gradient(135deg,#ff758c,#ff7eb3);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family:Segoe UI,sans-serif;
+}
+.card{
+  background:#fff;
+  max-width:420px;
+  width:100%;
+  border-radius:24px;
+  padding:25px;
+  box-shadow:0 20px 40px rgba(0,0,0,.3);
+}
+h1{text-align:center;margin:10px 0 0}
+.class{text-align:center;color:#ff4f87;font-weight:bold;margin-bottom:15px}
+img{width:100%;border-radius:18px;margin:15px 0}
+.section h3{color:#ff4f87;margin-bottom:6px}
+input,textarea{
+  width:100%;
+  padding:12px;
+  margin-bottom:10px;
+  border-radius:12px;
+  border:1px solid #ccc;
+}
+button{
+  width:100%;
+  padding:14px;
+  border-radius:14px;
+  border:none;
+  background:linear-gradient(135deg,#ff4f87,#ff2f6d);
+  color:white;
+  font-size:16px;
+  font-weight:bold;
+}
+</style>
 </head>
 
 <body>
 
 <div class="card">
-  <h1>Phạm Hải Đăng</h1>
-  <div class="class">12A4</div>
+<h1>Phạm Hải Đăng</h1>
+<div class="class">12A4</div>
 
-  <div class="section">
-    <h3>👦 Về mình</h3>
-    <p>Ít nói, nghiêm túc, không thích mập mờ. Thích quan tâm đúng người.</p>
-  </div>
-
-  <div class="section">
-    <h3>❤️ Sở thích</h3>
-    <p>Nghe nhạc khuya, nói chuyện dài, dành thời gian cho người đặc biệt.</p>
-  </div>
-
-  <div class="section">
-    <h3>💘 Gu con gái</h3>
-    <p>Dễ thương, nói chuyện hợp, biết trân trọng cảm xúc.</p>
-  </div>
-
-  <img src="avatar.jpg" class="avatar" alt="Ảnh của mình">
-
-  <!-- FORM -->
-  <form action="https://formsubmit.co/dangnhatminh18122008@gmail.com" method="POST">
-    <input type="text" name="Tên" placeholder="Tên của bạn" required>
-    <input type="text" name="SĐT" placeholder="Số điện thoại" required>
-    <input type="text" name="Facebook" placeholder="Link Facebook">
-    <textarea name="Lời nhắn" rows="3" placeholder="Lời nhắn cho mình"></textarea>
-
-    <!-- CONFIG -->
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="thankyou.html">
-
-    <button type="submit">Gửi thông tin 💌</button>
-  </form>
-
-  <footer>
-    Thông tin chỉ gửi riêng cho mình 😉
-  </footer>
+<div class="section">
+<h3>👦 Về mình</h3>
+<p>Ít nói, nghiêm túc, không thích mập mờ.</p>
 </div>
+
+<div class="section">
+<h3>💘 Gu con gái</h3>
+<p>Dễ thương, nói chuyện hợp, biết trân trọng.</p>
+</div>
+
+<img src="avatar.jpg">
+
+<form id="contactForm">
+  <input name="name" placeholder="Tên của bạn" required>
+  <input name="phone" placeholder="Số điện thoại" required>
+  <input name="facebook" placeholder="Facebook">
+  <textarea name="message" placeholder="Lời nhắn"></textarea>
+  <button type="submit">Gửi thông tin 💌</button>
+</form>
+</div>
+
+<script>
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", function(e){
+  e.preventDefault();
+
+  fetch("https://formsubmit.co/ajax/EMAIL_CUA_M@gmail.com", {
+    method: "POST",
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      name: form.name.value,
+      phone: form.phone.value,
+      facebook: form.facebook.value,
+      message: form.message.value
+    })
+  })
+  .then(res => res.json())
+  .then(() => {
+    window.location.href = "thankyou.html";
+  })
+  .catch(() => alert("Có lỗi xảy ra 😢"));
+});
+</script>
 
 </body>
 </html>
