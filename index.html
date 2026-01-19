@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile - Phạm Hải Đăng</title>
+    <title>Profile Tán Gái - Phạm Hải Đăng</title>
     <style>
         * {
             margin: 0;
@@ -62,6 +62,27 @@
         @keyframes rotate {
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
+        }
+
+        .avatar-container {
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .avatar {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
         }
 
         .header h1 {
@@ -403,6 +424,9 @@
 
     <div class="container">
         <div class="header">
+            <div class="avatar-container">
+                <img src="https://i.pravatar.cc/300?img=33" alt="Phạm Hải Đăng" class="avatar">
+            </div>
             <h1>Profile Tán Gái - Phạm Hải Đăng</h1>
             <p>Chào mừng bạn đến với profile của mình! 😊</p>
         </div>
@@ -459,7 +483,7 @@
                     Bạn quan tâm? Để lại thông tin nhé! 😊
                 </p>
                 <form action="https://formsubmit.co/dangnhatminh18122008@gmail.com" method="POST">
-                    <input type="hidden" name="_next" value="https://minhnhatdang2022-byte.github.io/Dang/thank-you.html">
+                    <input type="hidden" name="_next" value="https://minhhaidang2022-byte.github.io/Dang/thank-you.html">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_template" value="table">
                     
