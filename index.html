@@ -25,8 +25,8 @@ body{
 }
 h1{text-align:center;margin:10px 0 0}
 .class{text-align:center;color:#ff4f87;font-weight:bold;margin-bottom:15px}
-img{width:100%;border-radius:18px;margin:15px 0}
 .section h3{color:#ff4f87;margin-bottom:6px}
+img{width:100%;border-radius:18px;margin:15px 0}
 input,textarea{
   width:100%;
   padding:12px;
@@ -63,38 +63,43 @@ button{
 <p>Dễ thương, nói chuyện hợp, biết trân trọng.</p>
 </div>
 
-<img src="avatar.jpg">
+<img src="avatar.jpg" alt="Ảnh của mình">
 
 <form id="contactForm">
-  <input name="name" placeholder="Tên của bạn" required>
-  <input name="phone" placeholder="Số điện thoại" required>
-  <input name="facebook" placeholder="Facebook">
-  <textarea name="message" placeholder="Lời nhắn"></textarea>
+  <input name="name" required placeholder="Tên của bạn">
+  <input name="phone" required placeholder="Số điện thoại">
+  <input name="facebook" placeholder="Link Facebook">
+  <textarea name="message" placeholder="Lời nhắn cho mình"></textarea>
   <button type="submit">Gửi thông tin 💌</button>
 </form>
 </div>
 
 <script>
-const form = document.getElementById("contactForm");
+const FORM_ID = "FORM_ID_CUA_M"; // 🔴 THAY CÁI NÀY
 
-form.addEventListener("submit", function(e){
+document.getElementById("contactForm").addEventListener("submit", function(e){
   e.preventDefault();
 
-  fetch("https://formsubmit.co/ajax/EMAIL_CUA_M@gmail.com", {
+  const data = {
+    name: this.name.value,
+    phone: this.phone.value,
+    facebook: this.facebook.value,
+    message: this.message.value
+  };
+
+  fetch(`https://forminit.com/api/forms/${FORM_ID}/submissions`, {
     method: "POST",
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      name: form.name.value,
-      phone: form.phone.value,
-      facebook: form.facebook.value,
-      message: form.message.value
-    })
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    body: JSON.stringify(data)
   })
-  .then(res => res.json())
-  .then(() => {
+  .then(res => {
+    if (!res.ok) throw new Error("Submit failed");
     window.location.href = "thankyou.html";
   })
-  .catch(() => alert("Có lỗi xảy ra 😢"));
+  .catch(() => alert("Gửi lỗi, thử lại sau 😢"));
 });
 </script>
 
