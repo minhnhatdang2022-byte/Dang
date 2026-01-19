@@ -1,11 +1,251 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phạm Hải Đăng - Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #667eea;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        .header .class {
+            color: #667eea;
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #f0f0f0;
+        }
+
+        .section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .section li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        .section li:before {
+            content: "💜";
+            position: absolute;
+            left: 0;
+        }
+
+        .form-section {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        .form-section h2 {
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 1em;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+            font-family: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                padding: 25px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .section h2 {
+                font-size: 1.5em;
+            }
+
+            .avatar {
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        .heart-decoration {
+            text-align: center;
+            font-size: 2em;
+            margin: 20px 0;
+        }
+    </style>
+</head>
 <body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <img src="https://i.pravatar.cc/300?img=33" alt="Phạm Hải Đăng" class="avatar">
+                <h1>Phạm Hải Đăng</h1>
+                <p class="class">Lớp 12A4</p>
+            </div>
 
-<form action="https://forminit.com/f/wef1uhy6z1s" method="POST">
-  <input name="test" placeholder="test" required>
-  <button type="submit">GỬI TEST</button>
-</form>
+            <div class="section">
+                <h2>💭 Về mình</h2>
+                <ul>
+                    <li>Ít nói, chân thành, không thích mập mờ</li>
+                    <li>Thích nói chuyện khuya, quan tâm đúng lúc</li>
+                </ul>
+            </div>
 
+            <div class="section">
+                <h2>🎵 Sở thích</h2>
+                <ul>
+                    <li>Nghe nhạc</li>
+                    <li>Nhắn tin khuya</li>
+                    <li>Quan tâm một người duy nhất</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>✨ Gu con gái</h2>
+                <ul>
+                    <li>Dễ thương</li>
+                    <li>Nói chuyện hợp</li>
+                    <li>Biết trân trọng cảm xúc</li>
+                </ul>
+            </div>
+
+            <div class="heart-decoration">💌</div>
+
+            <div class="form-section">
+                <h2>Nếu bạn thấy hợp...</h2>
+                <form action="https://forminit.com/f/wef1uhy6z1s" method="POST">
+                    <div class="form-group">
+                        <label for="name">Tên của bạn *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Số điện thoại *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="facebook">Link Facebook *</label>
+                        <input type="url" id="facebook" name="facebook" placeholder="https://facebook.com/..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Lời nhắn</label>
+                        <textarea id="message" name="message" placeholder="Viết gì đó nhẹ nhàng..."></textarea>
+                    </div>
+
+                    <input type="hidden" name="_redirect" value="https://minhhaidang2022-byte.github.io/Dang/thank-you.html">
+
+                    <button type="submit" class="submit-btn">Gửi thông tin 💜</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
